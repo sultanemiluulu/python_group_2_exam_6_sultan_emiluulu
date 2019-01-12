@@ -1,0 +1,575 @@
+[
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add user info",
+    "content_type": [
+      "webapp",
+      "userinfo"
+    ],
+    "codename": "add_userinfo"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change user info",
+    "content_type": [
+      "webapp",
+      "userinfo"
+    ],
+    "codename": "change_userinfo"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete user info",
+    "content_type": [
+      "webapp",
+      "userinfo"
+    ],
+    "codename": "delete_userinfo"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view user info",
+    "content_type": [
+      "webapp",
+      "userinfo"
+    ],
+    "codename": "view_userinfo"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add post",
+    "content_type": [
+      "webapp",
+      "post"
+    ],
+    "codename": "add_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change post",
+    "content_type": [
+      "webapp",
+      "post"
+    ],
+    "codename": "change_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete post",
+    "content_type": [
+      "webapp",
+      "post"
+    ],
+    "codename": "delete_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view post",
+    "content_type": [
+      "webapp",
+      "post"
+    ],
+    "codename": "view_post"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$120000$4hQKB1II9pbJ$8FzuiPJo0utRPZ+vJGLyv2IFWaxkRm7cvRU5kPCnLyc=",
+    "last_login": "2019-01-12T06:39:27.247Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2019-01-12T05:25:15.846Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$120000$H1HmSQkCjNT5$Sg/poxJbdo/okmCEchs/KNUbh3gCWz/d6cb4nij1q6E=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "JohnDoe",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-01-12T06:49:28Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$120000$f9dvCx7BMAsl$hSyCGbyCrfSirimEUuqUy5xOSY4i8jX7oywf6sQUakY=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "AliceDoe",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-01-12T06:50:42Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$120000$WxQct8UWhDHf$tqnw9h1MWY9tmco8fcoJjAjBN3aFvbAhrLtgNoChLs0=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "BenTen",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-01-12T06:51:56Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 5,
+  "fields": {
+    "password": "pbkdf2_sha256$120000$6LEcFaVO5y5g$7LMLoHOz2UFfvpI7ey1dtJN4+RxLVwtR3ORffSgyOso=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "MonkeyKing",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-01-12T06:54:12Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "webapp.post",
+  "pk": 1,
+  "fields": {
+    "header": "My life be like uah",
+    "text": "It's times like these that make me say\r\nLord, if you see me please come my way\r\nLeaving bread crumbs for when I stray\r\nRely on sacrifice and the price you paid\r\nFeel me like a fingertip (fa-finger tip, fa-finger tip)\r\nSometimes I fall I slip\r\nMy heartfelt desire be more like you\r\nTrying not to quench your fire with the things I do\r\n\r\nMy life be like\r\nOoh Aah (yeah), Ooh Ooh\r\nMy life be like (yeah)\r\nOoh Aah, Ooh Aah (yeah), Ooh Ooh\r\nOoh Aah (yeah), Ooh Ooh\r\nMy life be like (yeah)\r\nOoh Aah, Ooh Aah (yeah), Ooh Ooh\r\nMy life be like (yeah)",
+    "created_at": "2019-01-12T06:59:19.614Z",
+    "author": [
+      "MonkeyKing"
+    ]
+  }
+},
+{
+  "model": "webapp.post",
+  "pk": 2,
+  "fields": {
+    "header": "Tokyo Drift",
+    "text": "I wonder if you know,\r\nHow they live in Tokyo,\r\nIf you seen it then you mean it\r\nThen you know you have to go.\r\nFast and furious! (Kitaa!) (Drift, Drift, Drift)\r\nFast and furious! (Kitaa!) (Drift, Drift, Drift)\r\nI wonder if you know,\r\nHow they live in Tokyo,\r\nIf you seen it then you mean it\r\nThen you know you have to go.\r\nFast and furious! (Kitaa!) (Drift, Drift, Drift)\r\nFast and furious! (Kitaa!) (Drift, Drift, Drift)\r\n\u3078\u3044\u3089\u3063\u3057\u3083\u3044, \u304a\u307e\u3061\u3069\u3046\u3055\u307e,\r\n\u55a7\u9a12\u307e\u307f\u308c \u3053\u306e \u8857\u306e\u6f14\u594f\u9ed9,\r\n\u3063\u305f\u307e\u307e\u4e00\u5ea6\u3064\u3044\u3066 \u304a\u3044\u3067,\r\n\u4e16\u754c\u4e2d\u9b45\u4e86\u3059\u308b\u307b\u3069\u306b\u8c6a\u83ef\u306a,\r\nJapan, \u4e00\u756a,\r\nJump around \u3055\u3041\u3046\u3061\u3089\u306e\u51fa\u756a,\r\nTeriyaki Boyz in the place to be,\r\n\u898b\u305b\u3066\u3084\u308b \u30aa\u30ea\u30b8\u30ca\u30eb (\u306f\u3044!) in the VIP.",
+    "created_at": "2019-01-12T07:00:35.561Z",
+    "author": [
+      "BenTen"
+    ]
+  }
+},
+{
+  "model": "webapp.post",
+  "pk": 3,
+  "fields": {
+    "header": "Not Afraid",
+    "text": "I'm not afraid to take a stand\r\nEverybody come take my hand\r\nWe'll walk this road together, through the storm\r\nWhatever weather, cold or warm\r\nJust lettin' you know that, you're not alone\r\nHolla if you feel that you've been down the same road\r\n\r\nYeah, It's been a ride...\r\nI guess i had to go to that place to get to this one\r\nNow some of you might still be in that place\r\nIf you're trying to get out, just follow me\r\nI'll get you there\r\n\r\n\u041e\u0440\u0438\u0433\u0438\u043d\u0430\u043b: https://en.lyrsense.com/eminem/not_afraid\r\nCopyright: https://lyrsense.com \u00a9",
+    "created_at": "2019-01-12T07:01:18.238Z",
+    "author": [
+      "JohnDoe"
+    ]
+  }
+},
+{
+  "model": "webapp.userinfo",
+  "pk": 1,
+  "fields": {
+    "user": [
+      "JohnDoe"
+    ],
+    "phone": "999666228",
+    "avatar": "",
+    "friend": []
+  }
+},
+{
+  "model": "webapp.userinfo",
+  "pk": 2,
+  "fields": {
+    "user": [
+      "AliceDoe"
+    ],
+    "phone": "020202222",
+    "avatar": "",
+    "friend": [
+      [
+        "JohnDoe"
+      ]
+    ]
+  }
+},
+{
+  "model": "webapp.userinfo",
+  "pk": 3,
+  "fields": {
+    "user": [
+      "BenTen"
+    ],
+    "phone": "1010101010",
+    "avatar": "ben10.jpg",
+    "friend": [
+      [
+        "AliceDoe"
+      ]
+    ]
+  }
+},
+{
+  "model": "webapp.userinfo",
+  "pk": 4,
+  "fields": {
+    "user": [
+      "MonkeyKing"
+    ],
+    "phone": "21312312323",
+    "avatar": "monkeyking.png",
+    "friend": [
+      [
+        "JohnDoe"
+      ],
+      [
+        "BenTen"
+      ]
+    ]
+  }
+}
+]
