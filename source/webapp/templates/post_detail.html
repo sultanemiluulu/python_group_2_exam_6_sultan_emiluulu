@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block title %}Post{% endblock %}
+{% block content %}
+    <div class="card text-center mt-5">
+        <div class="card-body">
+            <h3 class="card-title">{{ post.header }}</h3>
+            <p class="card-text mt-4">{{ post.text }}</p>
+            <p class="card-text">{{ post.author }}</p>
+            {% if user.is_authenticated %}
+                {% if request.user == post.author %}
+            <a href="{% url 'webapp:post_update' post.pk %}" class="btn btn-dark">Update</a>
+            <a href="{% url 'webapp:post_delete' post.pk %}" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal{{ post.pk }}">Delete</a>
+                {% endif %}
+            {% endif %}
+            <div class="modal fade" id="exampleModal{{ post.pk }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                 aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Are you sure?</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Are sure delete - '{{ post.header }}'    post?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <a href="{% url 'webapp:post_delete' post.pk %}" class="btn btn-danger">Delete</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+
+
+
+
+

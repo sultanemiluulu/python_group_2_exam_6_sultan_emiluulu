@@ -16,7 +16,7 @@ class Post(models.Model):
     header = models.CharField(max_length=100, verbose_name='Header', blank=True, null=True)
     text = models.TextField(max_length=2000, verbose_name='Text', blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='When was created')
-    author = models.ForeignKey(User, related_name='post', on_delete=models.PROTECT, verbose_name='Post')
+    author = models.ForeignKey(User, related_name='author', on_delete=models.PROTECT, verbose_name='Author')
 
     def __str__(self):
         return "%s, %s, %s" % (self.header, self.author, self.created_at)
