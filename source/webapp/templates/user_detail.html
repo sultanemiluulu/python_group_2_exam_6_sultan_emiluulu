@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% block title %}User{% endblock %}
+{% block content %}
+    <div class="card text-center mt-5">
+    <div class="card-body">
+    {% if userinfo.avatar %}
+        <img class="card-img-top mt-2" src="{{ userinfo.avatar.url }}" alt="*" style="width: 286px; height: 180px">
+    {% endif %}
+        <h3 class="card-title mt-4">{{ userinfo.user }}</h3>
+        <a href="#" id="button" class="btn btn-primary mb-2" style="display: inline-block">See phone number</a>
+    {% if userinfo.friend.all %}
+        <ul class="nav flex-column">
+            <h4>Friends: </h4>
+            {% for friend in userinfo.friend.all %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'webapp:user_detail' user.pk %}">{{ friend }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+        {% if request.user == userinfo.user %}
+            <a href="{% url 'webapp:user_update' user.pk %}" class="btn btn-dark">Update</a>
+        {% endif %}
+    <div class="row">
+        {% for post in userinfo.user.author.all %}
+            <div class="col-md-4">
+                <div class="card mt-4" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ post.header }}</h5>
+                        <p class="card-text">{{ post.author }}</p>
+                        <p class="card-text">{{ post.created_at }}</p>
+                        <a href="{% url 'webapp:post_detail' post.pk %}" class="btn btn-dark">See more</a>
+                    </div>
+                </div>
+            </div>
+    {% endfor %}
+    </div>
+    </div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    <script>
+        let phoneNumber = document.getElementById('#button');
+        phoneNumber.onclick = function() {
+            	let newElementText = document.createTextNode('{{ username.phone }}');
+                phoneNumber.appendChild(newElementText);
+        }
+    </script>
+{% endblock %}
+
+
+
+
+
+

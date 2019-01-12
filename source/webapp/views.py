@@ -1,7 +1,7 @@
 from django.shortcuts import get_object_or_404, redirect
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView, View
 from webapp.models import UserInfo, Post
-from webapp.forms import PostForm
+from webapp.forms import PostForm, UserUpdateForm
 from django.urls import reverse, reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 from django.http import HttpResponseRedirect, HttpResponseForbidden
@@ -68,6 +68,31 @@ class PostDeleteView(LoginRequiredMixin, View):
             return redirect('accounts:login')
         else:
             return redirect('webapp:post_detail',  pk=kwargs['pk'])
+
+
+class UserListView(ListView):
+    model = UserInfo
+    template_name = 'user_list.html'
+
+
+class UserDetailView(LoginRequiredMixin, DetailView):
+    model = UserInfo
+    template_name = 'user_detail.html'
+
+
+class UserUpdateView(LoginRequiredMixin, UpdateView):
+    model = UserInfo
+    template_name = 'user_update.html'
+    form_class = UserUpdateForm
+
+    def dispatch(self, request, *args, **kwargs):
+        client = get_object_or_404(UserInfo, pk=kwargs['pk'])
+        if self.request.user == client.user:
+            return super(UserUpdateView, self).dispatch(request, *args, **kwargs)
+        else:
+            return redirect('webapp:user_detail',  pk=kwargs['pk'])
+
+
 
 
 

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}User List{% endblock %}
+{% block menu %}
+    {% if user.is_authenticated %}
+        <li class="nav-item">
+            <a href="{% url 'webapp:post_create' %}" class="nav-link">Create Post</a>
+        </li>
+    {% endif %}
+{% endblock %}
+{% block content %}
+    <div class="row">
+        {% for info in userinfo_list %}
+            <div class="col-md-4">
+                <div class="card mt-4" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ info.user.username }}</h5>
+                        <p class="card-text">{{ info.phone }}</p>
+                        <a href="{% url 'webapp:user_detail' info.pk %}" class="btn btn-dark">See more</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
