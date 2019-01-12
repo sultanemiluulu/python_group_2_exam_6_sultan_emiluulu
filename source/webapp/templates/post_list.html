@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %}Post List{% endblock %}
+{% block menu %}
+    <li class="nav-item">
+        <a href="{% url 'webapp:post_list' %}" class="nav-link">Post List</a>
+    </li>
+{% endblock %}
+{% block content %}
+        <div class="row">
+            {% for post in post_list %}
+                <div class="col-md-4">
+                    <div class="card mt-4" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ post.header }}</h5>
+                            <p class="card-text">{{ post.author }}</p>
+{#                            <a href="{% url 'webapp:food_detail' food.pk %}" class="btn btn-dark">See more</a>#}
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+{% endblock %} %}
